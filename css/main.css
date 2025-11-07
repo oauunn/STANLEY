@@ -35,6 +35,8 @@
 }
 
 #header .inner .nav ul {
+    text-align: center;
+    align-items: center;
     display: flex;
     gap: 70px;
 }
@@ -46,7 +48,7 @@
 #header .inner .icon ul {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 /* 메인 */
@@ -201,14 +203,18 @@
 
 /* 반응형 - 태블릿 */
 @media screen and (max-width: 1199px) {
+
     /* 헤더 */
     #header .inner {
         padding: 20px 30px;
     }
 
+    #header .inner .logo img {
+        width: 120px;
+    }
+
     #header .inner .nav ul {
         padding: 0 20px;
-        align-items: center;
         gap: 20px;
         font-size: 16px;
     }
@@ -239,6 +245,7 @@
 
 /* 반응형 - 모바일  */
 @media screen and (max-width: 767px) {
+
     /* 헤더 */
     #header .inner {
         padding: 15px 20px;
@@ -253,10 +260,12 @@
         gap: 20px;
         align-items: center;
     }
+
     #header .inner .icon img {
         width: 16px;
         object-fit: cover;
     }
+
     #header .inner .logo img {
         width: 120px;
     }
