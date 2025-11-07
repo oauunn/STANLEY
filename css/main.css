@@ -143,7 +143,7 @@
 #footer .inner .top .right-box .text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 #footer .inner .top .right-box .text h4 {
@@ -174,7 +174,9 @@
 
 #footer .inner .bottom .left-text p {}
 
-#footer .inner .bottom .left-text a {}
+#footer .inner .bottom .left-text a:hover {
+    text-decoration: underline;
+}
 
 #footer .inner .bottom .right-text {
     display: flex;
@@ -191,5 +193,7 @@
 #footer .inner .bottom .right-text p {}
 
 #footer img {
+    width: 150px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
