@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 1805px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +31,7 @@
     font-weight: bold;
     line-height: 21px;
     color: #fff;
+    padding: 0 40px;
 }
 
 #header .inner .nav ul {
@@ -196,4 +197,100 @@
     width: 150px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+/* 반응형 - 태블릿 */
+@media screen and (max-width: 1199px) {
+    /* 헤더 */
+    #header .inner {
+        padding: 20px 30px;
+    }
+
+    #header .inner .nav ul {
+        padding: 0 20px;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    #header .inner .icon ul {
+        gap: 20px;
+    }
+
+
+    /* 메인 */
+    #main .inner .list .item {
+        width: 50%;
+    }
+
+
+    /* 푸터 */
+    #footer .inner .top {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #footer .inner .bottom {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/* 반응형 - 모바일  */
+@media screen and (max-width: 767px) {
+    /* 헤더 */
+    #header .inner {
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    #header .inner .nav {
+        display: none;
+    }
+
+    #header .inner .icon ul {
+        gap: 20px;
+        align-items: center;
+    }
+    #header .inner .icon img {
+        width: 16px;
+        object-fit: cover;
+    }
+    #header .inner .logo img {
+        width: 120px;
+    }
+
+
+    /* 메인 */
+    #main .inner .list {
+        flex-direction: column;
+    }
+
+    #main .inner .list .item {
+        width: 100%;
+    }
+
+    #main .inner .list .item h1 {
+        font-size: 24px;
+    }
+
+
+    /* 푸터 */
+    #footer .inner .top .left-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    #footer .inner .bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #footer img {
+        display: block;
+        margin: 40px auto 20px;
+    }
 }
